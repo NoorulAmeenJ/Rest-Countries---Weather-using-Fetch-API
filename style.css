@@ -4,7 +4,7 @@ body{
     justify-content: center;
     grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
     gap: 3rem;
-    text-align: center;
+    text-align: center !important;
 }
 span{
     font-weight: bold;
@@ -12,8 +12,9 @@ span{
 .card{
     border-radius: 5px;
     box-shadow: 5px 5px 2px  rgb(230, 198, 198);
-    max-height: 50%;
-    height : 65rem;
+    /* max-height: 50%; */
+    /* height : ; */
+
     /* overflow: hidden; */
     /* max-height: 50rem; */
 }

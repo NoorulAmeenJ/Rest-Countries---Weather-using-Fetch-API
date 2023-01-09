@@ -9,19 +9,28 @@ var fet = fetch(API)
         name: value.name.common,
         flag: value.flags.png,
         code: value.cioc,
-        capital: value.capital[0],
+        capital: value.capital,
         region: value.region,
         population: value.population,
+        latitude: value.latlng[0],
+        longitude: value.latlng[1]
+
       };
       createcountry(spreadOperator);
-    });
-  });
-
-function createcountry({ name, flag, code, capital, region, population }) {
-  document.body.innerHTML += `
+      // var WAPI = `https://api.openweathermap.org/data/2.5/weather?lat=${value.latlng[0]}&lon=${value.latlng[1]}&appid={63b43da2942970bf5f69ddb11c8aea2b}`
+      // console.log(WAPI) 
+      console.log(value)
+    })
+  })
   
-    <div class="card" style="width: 18rem;">
-    <h4>${name}</h4>
+  
+   
+function createcountry({ name, flag, code, capital, region, population,latitude,longitude }) {
+  // 
+  document.body.innerHTML += 
+  ` <div class="container">
+    <div class="card"  >
+    <h1 id="title" class="text-center">${name}</h1>
     <img src="${flag}" class="flag" alt="${name}'Flag image">
  
   <div class="card-body">
@@ -30,15 +39,11 @@ function createcountry({ name, flag, code, capital, region, population }) {
   <p><span>Region :</span> ${region}</p>
   <p><span>Country Code :</span>${code}</p>
   <a href="#" class="btn btn-primary">Click for Weather</a>
-  <div>sss</div>
+  <div>sss${latitude}</div>
+  <div>sss${longitude}</div>
   </div>
 </div>
+</div>
 `
-
 }
-// country- value.name.common
-// flag - value.flags.png
-// capital -value.capital[0]
-// region-value.region
-//   lat/lag -value.latlng[0],value.latlng[1]
-//   weather-
+//  var WAPI = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={63b43da2942970bf5f69ddb11c8aea2b}"

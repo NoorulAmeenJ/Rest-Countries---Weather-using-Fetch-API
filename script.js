@@ -26,7 +26,7 @@ var fet = fetch(API)
   
    
 function createcountry({ name, flag, code, capital, region, population,latitude,longitude }) {
-  // 
+   
   document.body.innerHTML += 
   ` <div class="container">
     <div class="card"  >

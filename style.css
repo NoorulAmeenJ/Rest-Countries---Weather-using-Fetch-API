@@ -19,7 +19,7 @@ span{
     /* overflow: hidden; */
     /* max-height: 50rem; */
     width:15rem;
-    height: 30rem;
+    height: 31rem;
    
 }
 .flag{
@@ -29,5 +29,9 @@ span{
     /* padding: 2rem; */
     width:10rem;
     height: 10rem;
+    margin:auto;
 }
-
+.car{
+    /* height: 10rem; */
+    line-height: normal;
+}

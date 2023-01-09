@@ -33,7 +33,7 @@ function createcountry({ name, flag, code, capital, region, population,latitude,
     <h1 id="title" class="text-center">${name}</h1>
     <img src="${flag}" class="flag" alt="${name}'Flag image">
  
-  <div class="card-body">
+  <div class="card-body car">
   <p><span>Population :</span>${population}</p>
   <p><span>Captial :</span> ${capital}</p>
   <p><span>Region :</span> ${region}</p>

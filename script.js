@@ -4,6 +4,7 @@ var API = "https://restcountries.com/v3.1/all";
 var fet = fetch(API)
   .then((response) => response.json())
   .then((data) => {
+    
     data.map((value) => {
       var spreadOperator = {
         ...value,
